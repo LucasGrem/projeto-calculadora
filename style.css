@@ -11,10 +11,42 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(to top, #6495ed, #78d5ff, #8ea6ff, #5ca0e6, #4169e1);
 }
 
 main {
-    border: 1px solid black;
-    height: 30em;
+    background-color: rgba(255, 255, 255, 0.363);
     width: 20em;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.539);
+}
+
+input {
+    border: none;
+    width: 100%;
+    height: 4em;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.199);
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 15px;
+}
+
+button {
+    height: 4em;
+}
+
+.button-limpar {
+    grid-column: span 2;
+}
+
+.button-zero {
+    grid-column: span 3;
 }
